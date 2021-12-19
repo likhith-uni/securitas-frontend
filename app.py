@@ -3,7 +3,7 @@ import requests
 from scan import post_vulns
 app = Flask(__name__)
 
-STAGING_URL = "http://localhost:8000/"
+STAGING_URL = "http://20.127.140.205/"
 STAGING_USERNAME = 'Likhith'
 
 @app.route('/')
