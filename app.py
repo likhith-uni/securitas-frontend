@@ -45,7 +45,6 @@ def projects():
     """
     Display list of all projects with links to said projects
     """
-
     data = requests.get(STAGING_URL+'user/'+STAGING_USERNAME+"/project")
     print(data.json()[0])
     return render_template('projects.html',data = data.json())
