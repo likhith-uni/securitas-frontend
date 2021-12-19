@@ -67,5 +67,9 @@ def vulnerability(id):
     data = requests.get(STAGING_URL+"vulnerabilities/"+str(id))
     return render_template('vuln.html',vuln = data.json())
 
+@app.route('/selenium')
+def selenium():
+    return "Selenium Test"
+
 if __name__ == "__main__":
     app.run(debug=True)
